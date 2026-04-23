@@ -1,0 +1,49 @@
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 40px 20px;
+background-color: #f1f3f4; 
+font-family: sans-serif;
+}
+
+.form-container {
+width: 480px;
+padding: 30px;
+background-color: #ffffff; 
+border-radius: 4px;
+}
+
+h1 {
+font-size: 24px;
+text-align: center;
+font-size: 35px;
+}
+
+label {
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+text-align: left;
+}
+
+input, select {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #dcdcdc;
+box-sizing: border-box;
+}
+
+.submit-btn {
+display: block;
+width: 80px;
+padding: 10px;
+background-color: #1a73e8; 
+color: white;
+border: none;
+cursor: pointer;
+text-align: center;
+margin-left: 0;
+}
