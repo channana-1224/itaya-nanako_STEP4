@@ -32,9 +32,10 @@ if (empty($email)) $errors[] = 'メールアドレスを入力してください
 if (empty($phone)) $errors[] = '電話番号を入力してください。';
 if (empty($age)) $errors[] = '年齢を入力してください。';
 if (empty($gender)) $errors[] = '性別を入力してください。';
+if (empty($address)) $errors[] = '住所を入力してください。';
 if (empty($question)) $errors[] = '質問を入力してください。';
 
-if (!preg_match('/^[ぁ-んァ-ヶー一-龠a-zA-Z]+$/u', $name)) $errors[] = '名前の形式が正しくありません。';
+if (!preg_match('/^[ぁ-んァ-ヶー一-龠a-zA-Z\s]+$/u', $name)) $errors[] = '名前の形式が正しくありません。';
 if (!is_numeric($age) || $age < 0 || $age > 150) $errors[] = '年齢は0から150の数字で入力してください。';
 if (!preg_match('/^[0-9-]+$/', $phone)) $errors[] = '電話番号の形式が正しくありません。';
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = 'メールアドレスの形式が正しくありません。';
